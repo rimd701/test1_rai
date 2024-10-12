@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./regex_app
+    environment:  
+      OPENAI_API_KEY: "your key"  # Define your environment variable here  
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
