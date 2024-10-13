@@ -4,7 +4,7 @@ services:
   backend:
     build: ./regex_app
     environment:  
-      OPENAI_API_KEY: "your key"  # Define your environment variable here  
+      OPENAI_API_KEY: ""  # Define your environment variable here  
     ports:
       - "8000:8000"
 
